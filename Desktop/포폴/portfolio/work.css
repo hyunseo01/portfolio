@@ -1,0 +1,108 @@
+.work{
+    width: 100%;
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow: hidden;
+}
+.work_title{
+    width: 100%;
+    height: 500px;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 300px;
+    background-image: url(back2.jpg);
+    object-fit: cover;
+}
+.work_title--set{
+    position: relative;
+    top: -120px;
+}
+.project{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -150px;
+    justify-content: space-between;
+}
+.project_box{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.project_box--img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-top: 70px;
+}
+.project_box--text{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.project_title{
+    font-size: 16px;
+    font-weight: 700;
+}
+.project_info{
+    text-align: left;
+}
+.hide{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    position: relative;
+    top: -1050px;
+}
+.hidebox{
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.7s;
+}
+.hidebox:hover{
+    opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+    .work{
+        height: 4000px;
+    }
+    .project{
+        max-width: 300px;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .hide{
+        max-width: 300px;
+        flex-direction: column;
+        position: relative;
+        top: -3690px;
+        gap: 40px;
+    }
+}
+
